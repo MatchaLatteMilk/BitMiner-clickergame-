@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://objects/Bitcoin/Bitcoin.gd" type="Script" id=1]
+[ext_resource path="res://bitcoin (1).png" type="Texture" id=2]
+
+[node name="Bitcoin" type="StaticBody2D"]
+position = Vector2( 360, 640 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )

@@ -1,0 +1,177 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Amatic-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://objects/UI/UI.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 128
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 128
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 128
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 64
+font_data = ExtResource( 1 )
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 166.489
+margin_top = 1179.69
+margin_right = 570.489
+margin_bottom = 1279.69
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Option_Button" type="Button" parent="HBoxContainer"]
+margin_right = 200.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 200, 100 )
+custom_fonts/font = SubResource( 1 )
+text = "OPTIONS"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Upgrade_Button" type="Button" parent="HBoxContainer"]
+light_mask = 2
+margin_left = 204.0
+margin_right = 404.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 200, 100 )
+custom_fonts/font = SubResource( 1 )
+text = "UPGRADES"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Option" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Option"]
+margin_left = -66.8173
+margin_top = -77.0292
+margin_right = 783.183
+margin_bottom = 1324.97
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton" type="OptionButton" parent="Option"]
+margin_left = 53.3647
+margin_top = 33.9092
+margin_right = 266.365
+margin_bottom = 177.909
+custom_fonts/font = SubResource( 5 )
+text = "COLOR"
+flat = true
+clip_text = true
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close" type="Button" parent="Option"]
+margin_left = 300.0
+margin_top = 1100.0
+margin_right = 444.0
+margin_bottom = 1244.0
+custom_fonts/font = SubResource( 4 )
+text = "X"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Upgrade" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Upgrade"]
+margin_left = -66.8173
+margin_top = -77.0292
+margin_right = 783.183
+margin_bottom = 1324.97
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Graphic_Card" type="Label" parent="Upgrade"]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 254.531
+margin_bottom = 97.0616
+custom_fonts/font = SubResource( 2 )
+text = "GRAPHIC CARD"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="U_GC" type="Button" parent="Upgrade/Graphic_Card"]
+margin_left = -1.0
+margin_top = 161.0
+margin_right = 652.0
+margin_bottom = 276.0
+custom_fonts/font = SubResource( 3 )
+
+[node name="PC_Count" type="Label" parent="Upgrade"]
+margin_left = 50.0
+margin_top = 500.0
+margin_right = 254.531
+margin_bottom = 97.0616
+custom_fonts/font = SubResource( 2 )
+text = "PC COUNT"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="U_PC" type="Button" parent="Upgrade/PC_Count"]
+margin_left = -1.0
+margin_top = 161.0
+margin_right = 652.0
+margin_bottom = 276.0
+custom_fonts/font = SubResource( 3 )
+
+[node name="Close" type="Button" parent="Upgrade"]
+margin_left = 300.0
+margin_top = 1100.0
+margin_right = 444.0
+margin_bottom = 1244.0
+custom_fonts/font = SubResource( 4 )
+text = "X"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
